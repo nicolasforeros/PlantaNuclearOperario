@@ -424,13 +424,13 @@ public class PanelControlPlantaN extends javax.swing.JFrame implements InterfazP
                 this.labelR2.setIcon(this.ICONO_R_APAGADO);
                 this.txtFEstadoR2.setText("APAGADO");
                 this.txtFCargaR2.setText("0");
-                this.progressBarR1.setValue(0);
+                this.progressBarR2.setValue(0);
                 break;
             case 2:
                 this.labelR3.setIcon(this.ICONO_R_APAGADO);
                 this.txtFEstadoR3.setText("APAGADO");
-                this.txtFCargaR2.setText("0");
-                this.progressBarR1.setValue(0);
+                this.txtFCargaR3.setText("0");
+                this.progressBarR3.setValue(0);
                 break;
             default:
                 break;
@@ -449,14 +449,14 @@ public class PanelControlPlantaN extends javax.swing.JFrame implements InterfazP
             case 1:
                 this.labelR2.setIcon(this.ICONO_R_APAGADO);
                 this.txtFEstadoR2.setText("APAGADO");
-                this.txtFCargaR1.setText("0");
-                this.progressBarR1.setValue(0);
+                this.txtFCargaR2.setText("0");
+                this.progressBarR2.setValue(0);
                 break;
             case 2:
                 this.labelR3.setIcon(this.ICONO_R_APAGADO);
                 this.txtFEstadoR3.setText("APAGADO");
-                this.txtFCargaR1.setText("0");
-                this.progressBarR1.setValue(0);
+                this.txtFCargaR3.setText("0");
+                this.progressBarR3.setValue(0);
                 break;
             default:
                 break;
@@ -474,12 +474,12 @@ public class PanelControlPlantaN extends javax.swing.JFrame implements InterfazP
             case 1:
                 this.labelR2.setIcon(this.ICONO_R_AVERIADO);
                 this.txtFEstadoR2.setText("DAÑADO");
-                this.progressBarR1.setValue(100);
+                this.progressBarR2.setValue(100);
                 break;
             case 2:
                 this.labelR3.setIcon(this.ICONO_R_AVERIADO);
                 this.txtFEstadoR3.setText("DAÑADO");
-                this.progressBarR1.setValue(100);
+                this.progressBarR3.setValue(100);
                 break;
             default:
                 break;

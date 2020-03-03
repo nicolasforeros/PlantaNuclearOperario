@@ -35,11 +35,11 @@ public class RedEntrada extends Thread{
             
             try {
                 String mensajeIn = in.readUTF();
-                System.out.println("RED ENTRADA: se recibio el mensaje " + mensajeIn);
+                System.out.println("RED ENTRADA: se recibió el mensaje " + mensajeIn);
                 
                 this.interpreteMensajes.interpretarMensaje(mensajeIn);
             } catch (IOException ex) {
-                System.out.println("RED ENTRADA: error en la recepcion de mensajes " + ex.getMessage());
+                System.out.println("RED ENTRADA: error en la recepción de mensajes " + ex.getMessage());
                 break;
             }
             

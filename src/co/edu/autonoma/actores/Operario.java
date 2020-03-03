@@ -113,6 +113,10 @@ public class Operario {
         this.redSalida.enviarMensaje(mensajeEnviar);
     }
     
+    public void cerrarSesion(){
+        this.redSalida.enviarMensaje("cerrar");
+    }
+    
     public Socket getSocket() {
         return socket;
     }

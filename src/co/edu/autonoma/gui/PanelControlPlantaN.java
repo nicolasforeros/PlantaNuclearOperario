@@ -38,7 +38,9 @@ public class PanelControlPlantaN extends javax.swing.JFrame implements InterfazP
         this.ICONO_R_AVERIADO = new javax.swing.ImageIcon(getClass().getResource("/imagenes/ReactorDanado.png"));
         
         this.labelBienvenida.setText(this.labelBienvenida.getText() + this.operario.getNombre());
-        this.txtFChat.requestFocusInWindow();        
+        this.txtFChat.requestFocusInWindow();  
+        
+        new SmartScroller(jScrollPane1);
     }
 
     /**
@@ -87,7 +89,7 @@ public class PanelControlPlantaN extends javax.swing.JFrame implements InterfazP
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setLayout(null);

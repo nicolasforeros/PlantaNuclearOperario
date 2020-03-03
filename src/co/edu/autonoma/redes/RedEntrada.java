@@ -40,6 +40,7 @@ public class RedEntrada extends Thread{
                 this.interpreteMensajes.interpretarMensaje(mensajeIn);
             } catch (IOException ex) {
                 System.out.println("RED ENTRADA: error en la recepcion de mensajes " + ex.getMessage());
+                break;
             }
             
         }

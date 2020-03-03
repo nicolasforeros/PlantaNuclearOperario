@@ -17,13 +17,17 @@ class EscritorMensajes {
     String nombreOperario;
     JSONObject obj;
 
-    public EscritorMensajes(String nombreOperario) {
-        this.nombreOperario = nombreOperario;
+    public EscritorMensajes() {
+        this.nombreOperario = null;
         
         this.obj = new JSONObject();
-        this.obj.put("operario", nombreOperario);
     }
 
+    public void setNombreOperario(String nombreOperario) {
+        this.nombreOperario = nombreOperario;
+        this.obj.put("operario", nombreOperario);
+    }
+    
     String escribirMensajeChat(String mensajeParaChat) {
         
         obj.put("operacion","chat");

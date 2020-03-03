@@ -40,7 +40,7 @@ public class Operario {
         
         redEntrada = new RedEntrada();
         redSalida = new RedSalida();
-        this.escritor = new EscritorMensajes(this.nombre);
+        this.escritor = new EscritorMensajes();
     }
     
     public boolean conectarAServidor(){
@@ -131,6 +131,7 @@ public class Operario {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+        this.escritor.setNombreOperario(nombre);
     }
 
     public String getIpServidor() {
